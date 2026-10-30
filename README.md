@@ -67,3 +67,8 @@ In progress — Windows Server 2025 domain controller deployed and Active Direct
 ### Security Group Membership Verification
 
 ![IT-Support security group showing Peter Parker, Miles Morales, and Gwen Stacy](screenshots/it-support-group-members.png)
+### Employees Organizational Unit
+
+The Employees OU contains three test user accounts and the IT-Support security group.
+
+![Active Directory Employees OU showing user accounts and IT-Support security group](screenshots/active-directory-employees-ou.png)
