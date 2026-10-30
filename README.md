@@ -72,3 +72,31 @@ In progress — Windows Server 2025 domain controller deployed and Active Direct
 The Employees OU contains three test user accounts and the IT-Support security group.
 
 ![Active Directory Employees OU showing user accounts and IT-Support security group](screenshots/active-directory-employees-ou.png)
+## DNS Troubleshooting and Domain Controller Verification
+
+### Objective
+Verify that the Windows Server 2025 domain controller can resolve the Active Directory domain and be discovered by domain services.
+
+### Troubleshooting Steps
+1. Ran `nslookup corp.example.test` and observed DNS request timeouts.
+2. Used `ipconfig /all` to inspect the server's network configuration and DNS settings.
+3. Confirmed the DNS service was running using `sc query DNS`.
+4. Ran `nslookup corp.example.test 127.0.0.1` to test DNS resolution directly through the local IPv4 DNS service.
+5. Ran `nltest /dsgetdc:corp.example.test` to verify domain controller discovery.
+
+### Results
+- DNS service status: RUNNING.
+- Local IPv4 DNS lookup: Successful.
+- Domain resolved to IPv4 address `10.0.2.20`.
+- Domain controller DC01 was successfully discovered.
+- Domain controller discovery returned `The command completed successfully`.
+- Initial DNS timeouts remain under investigation.
+
+### Evidence
+![DNS resolution and domain controller discovery verification](screenshots/domain-controller-dns-verification.png)
+
+### Skills Practiced
+- Windows Server DNS troubleshooting
+- Command-line network diagnostics
+- Active Directory domain controller discovery
+- Troubleshooting and verification documentation
