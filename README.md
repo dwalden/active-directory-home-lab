@@ -31,3 +31,8 @@ This project documents my hands-on experience building a Windows Server 2025 Act
 
 ## Project Status
 In progress — domain controller verification pending.
+## Lab Screenshots
+
+### Active Directory Prerequisites Check
+
+![Active Directory Prerequisites Check](screenshots/active-directory-prerequisites-check.jpg)
