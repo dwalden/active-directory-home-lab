@@ -36,3 +36,23 @@ In progress — domain controller verification pending.
 ### Active Directory Prerequisites Check
 
 ![Active Directory Prerequisites Check](screenshots/active-directory-prerequisites-check.jpg)
+## Active Directory User and Group Management
+
+### User Account Management
+- Created an Employees organizational unit (OU) to organize domain user accounts.
+- Provisioned test user accounts for Peter Parker, Miles Morales, and Gwen Stacy.
+- Practiced resetting user passwords and requiring password changes at next logon.
+- Disabled and re-enabled a user account to simulate temporary employee leave.
+- Deleted an unused test account.
+
+### Security Group Management
+- Created an IT-Support global security group.
+- Added three domain users to the security group.
+- Verified group membership using Active Directory Users and Computers.
+
+### Skills Practiced
+- Active Directory Domain Services (AD DS)
+- User provisioning and account lifecycle management
+- Password administration
+- Security group creation and membership management
+- Basic identity and access management (IAM)
