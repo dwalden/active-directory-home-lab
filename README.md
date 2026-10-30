@@ -56,3 +56,6 @@ In progress — domain controller verification pending.
 - Password administration
 - Security group creation and membership management
 - Basic identity and access management (IAM)
+### Security Group Membership Verification
+
+![IT-Support security group showing Peter Parker, Miles Morales, and Gwen Stacy](screenshots/it-support-group-members.png)
