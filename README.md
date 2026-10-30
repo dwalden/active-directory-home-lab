@@ -21,16 +21,24 @@ This project documents my hands-on experience building a Windows Server 2025 Act
 4. Configured a new Active Directory forest named corp.example.test.
 5. Passed the domain controller prerequisite checks.
 6. Started domain controller promotion and observed the server restart.
-
+7. Verified successful domain controller promotion using Active Directory Users and Computers.
+8. Created an Employees organizational unit (OU).
+9. Created and managed domain user accounts.
+10. Performed a password reset with a required password change at next logon.
+11. Disabled and re-enabled a user account.
+12. Created an IT-Support global security group.
+13. Added three users to the security group and verified their membership.
 ## Next Steps
-- Verify successful domain controller promotion.
-- Validate Active Directory and DNS functionality.
-- Create and manage domain user accounts.
-- Practice common IT Help Desk tasks, including password resets and account unlocks.
-- Document troubleshooting procedures and screenshots.
+
+- [ ] Validate Active Directory DNS functionality.
+- [ ] Simulate and troubleshoot locked user accounts.
+- [ ] Practice unlocking accounts in Active Directory.
+- [ ] Create additional organizational units and security groups.
+- [ ] Explore Group Policy Objects (GPOs).
+- [ ] Document troubleshooting procedures and add supporting screenshots.
 
 ## Project Status
-In progress — domain controller verification pending.
+In progress — Windows Server 2025 domain controller deployed and Active Directory user and group management exercises completed. Additional DNS validation, account troubleshooting, and access management labs planned.
 ## Lab Screenshots
 
 ### Active Directory Prerequisites Check
