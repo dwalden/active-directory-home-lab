@@ -100,3 +100,43 @@ Verify that the Windows Server 2025 domain controller can resolve the Active Dir
 - Command-line network diagnostics
 - Active Directory domain controller discovery
 - Troubleshooting and verification documentation
+## Active Directory Account Lockout Troubleshooting
+
+### Objective
+Simulate an Active Directory account lockout, identify the issue, restore user access, and verify the resolution.
+
+### Lab Environment
+- Windows Server 2025
+- Active Directory Domain Services (AD DS)
+- Domain: `corp.example.test`
+- Test user: Peter Parker (`pparker`)
+
+### Troubleshooting Steps
+1. Configured a domain account lockout threshold of five failed login attempts.
+2. Simulated unsuccessful authentication attempts using an incorrect test password.
+3. Used PowerShell to inspect the user's failed login count and account lockout status.
+4. Confirmed the account was locked (`LockedOut = True`).
+5. Opened Active Directory Users and Computers (ADUC) and manually unlocked the account.
+6. Verified the account was no longer locked (`LockedOut = False`).
+
+### Verification
+
+The following PowerShell command confirmed that the account was unlocked:
+
+```powershell
+Get-ADUser pparker -Properties LockedOut | Select-Object Name,LockedOut
+```
+
+**Result:** `LockedOut = False`
+
+![Account Unlock Verification](screenshots/ad-account-unlock-verification.png)
+
+### Skills Practiced
+- Active Directory user account management
+- Account lockout policy configuration
+- Authentication troubleshooting
+- PowerShell account status verification
+- Help Desk incident resolution and documentation
+
+### Key Takeaway
+This lab demonstrated how to investigate and resolve an Active Directory account lockout, a common issue handled by IT Help Desk and Service Desk technicians.
