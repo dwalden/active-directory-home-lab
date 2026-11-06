@@ -140,3 +140,23 @@ Get-ADUser pparker -Properties LockedOut | Select-Object Name,LockedOut
 
 ### Key Takeaway
 This lab demonstrated how to investigate and resolve an Active Directory account lockout, a common issue handled by IT Help Desk and Service Desk technicians.
+## Active Directory Password Reset Lab
+
+### Objective
+Simulate a common Help Desk request by resetting a user's password and verifying their account settings in Active Directory.
+
+### Tasks Completed
+- Reset a test user's password using Active Directory Users and Computers (ADUC).
+- Enabled **User must change password at next logon**.
+- Verified the user account was enabled.
+- Confirmed the password reset completed successfully.
+
+### Verification
+Active Directory confirmed the password reset was successful. The account properties showed that the user was required to change their password at the next login and that the account remained enabled.
+
+![Password Reset Verification](screenshots/ad-password-reset-verification.png)
+
+### Skills Practiced
+Active Directory user management, password resets, account verification, and Help Desk troubleshooting.
+
+**Note:** An actual user login was not tested.
