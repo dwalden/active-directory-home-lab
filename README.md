@@ -159,4 +159,25 @@ Active Directory confirmed the password reset was successful. The account proper
 ### Skills Practiced
 Active Directory user management, password resets, account verification, and Help Desk troubleshooting.
 
-**Note:** An actual user login was not tested.
+## Active Directory Account Disable and Re-enable Lab
+
+### Objective
+Simulate a Help Desk request to disable an employee's account and restore access following authorization.
+
+### Tasks Completed
+- Disabled a test user account using Active Directory Users and Computers (ADUC).
+- Verified the account was disabled.
+- Re-enabled the account following simulated HR approval.
+- Confirmed the account was successfully re-enabled.
+
+### Verification
+**Account Disabled:**
+
+![Account Disabled](screenshots/ad-account-disabled-verification.png)
+
+**Account Enabled:**
+
+![Account Enabled](screenshots/ad-account-enabled-verification.png)
+
+### Skills Practiced
+Active Directory user management, account deactivation and reactivation, access control, and Help Desk troubleshooting.
